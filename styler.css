@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: gold; 
+  padding: 10px;
+}
+
+.head {
+  background-color: firebrick; 
+  flex: 1;
+  margin: 0 5px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .main {
+      grid-template-columns: 1fr;
+  }
+
+  .side-section {
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .header {
+      flex-direction: column;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: cadetblue; 
+  padding: 10px;
+  gap: 10px;
+}
+
+.large-section {
+  background-color: darkgreen; 
+  height: 100%;
+}
+
+.article {
+  background-color: azure;
+  height: 100px;
+}
+
+.aside {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.aside-item {
+  background-color: chartreuse; 
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: gold; 
+  position: relative;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-left {
+  width: 60%;
+}
+
+.footer-right {
+  width: 30%;
+}
+
+.nav {
+  background-color: blue; 
+  height: 50px;
+}
+
+.section {
+  background-color: blue; 
+  height: 50px;
+}
+
+.box {
+  background-color: burlywood;
+  height: 50px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  gap: 5px;
+}
+
+.bottom-box {
+  background-color: crimson;
+  height: 50px;
+  }
+  
